@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './';
 import './App.css';
-import dummyData from 'dummy-data';
-import SearchBar from 'SearchBar';
-import PostContainer from './PostContainer';
+import dummyData from './dummy-data';
+import SearchBar from './Components/SearchBar/SearchBar';
+import PostContainer from './Components/PostContainer/PostContainer';
 
 class App extends Component {
-    constructor() {
-      super();
-      this.state = {
-        dummyData: dummyData
-      };
-    }
+  constructor() {
+    super();
+    this.state = {
+      dummyData: dummyData
+    };
+  }
 
   render() {
     return (
