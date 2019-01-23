@@ -1,0 +1,9 @@
+.comment {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.comment span {
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+.content {
+    width: 40%;
+    margin: 0 auto;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.contentHeader {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 3%;
+    height: 50px;
+}
+
+.contentHeader img {
+    border-radius: 100%;
+    height: 50%;
+    margin-right: 2%;
+}
+
+.contentHeader h5 {
+    font-weight: bold;
+}
+
+.contentImage img {
+    width: 100%;
+}
