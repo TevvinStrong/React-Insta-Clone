@@ -1,0 +1,60 @@
+.instaComment {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin: 0 3%; 
+}
+
+.commentId {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.commentId img {
+    height: 25px;
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+.commentId img:last-of-type {
+    margin-right: 0;
+}
+
+.instaComment h6 {
+    margin: 10px 0;
+    font-weight: bold
+}
+
+.instaDate {
+    font-size: 14px;
+    color: gray;
+}
+
+.newComment {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+    margin-top: 10px;
+}
+
+.newComment input {
+    height: 20px;
+    margin: 15px 0;
+    font-size: 16px;
+    border: none;
+    text-align: left;
+    flex-grow: 1;
+    background-color: white;
+    color: gray;
+    border: none;
+}
+
+.newComment img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer; 
+}

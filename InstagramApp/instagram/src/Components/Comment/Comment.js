@@ -6,3 +6,5 @@ const Comment = props => (
         <span>{props.name}</span>{props.text}
     </p>
 );
+
+export default Comment;

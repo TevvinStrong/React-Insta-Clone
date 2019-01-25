@@ -10,7 +10,33 @@ class App extends Component {
     super();
     this.state = {
       data: dummyData,
+      comments: '',
     };
+  }
+  addComment = c => {
+    this.setState({
+      comments: c.target.value,
+    }, () => console.log(this.state));
+  }
+  getComment = (e) => {
+    if (!this.state.comments) {
+      alert('Please add comment!');
+      return;
+    }
+    this.setState((prevState) => {
+      prevState.data.forEach(a => {
+        if (a.imageUrl === e) {
+          a.comments.shift();
+          a.comments.push({
+            username: 'Testguy123',
+            text: prevState.comments,
+          });
+        }
+      });
+      return {
+        comment: '',
+      }
+    });
   }
 
   render() {
